@@ -1,0 +1,25 @@
+<form action="/pizzas" method="POST">
+
+  <label for="first-name-field">First Name:</label>
+  <input type="text" name="<%= @id %> " id="first-name-field" value="<%= @pizza.first_name %>" />
+
+  <label for="last-name-field">Last Name:</label>
+  <input type="text" name="last_name" id="last-name-field" value="<%= @pizza.last_name %>"/>
+
+  <label for="pizza-select">Select a pizza:</label>
+
+  <select id="pizza-select" name="topping">
+    <option value="Margherita">Margherita></option>
+    <option value="Margherita">Calzone</option>
+    <option value="Margherita">Chocolate Chip Cookie and Ice Cream Sweetza></option>
+    <option value="Margherita">Jenny Sweetza></option>
+    <option value="Margherita">Carrots (only Eloise and Ernest and Floppity and Patch and Fitzgerald and Jenny and Alice and Andrew can order these)></option>
+    value="<%= @pizza.topping %>
+  </select>
+
+  <label for="quantity">How many?</label>
+  <input type="number" name="quantity" id="quantity" value="<%= @pizza.quantity %>"/>
+
+  <input type="submit" value="order pizza"/>
+
+</form>
